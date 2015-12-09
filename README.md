@@ -11,6 +11,10 @@ To be sent to the topic, however it will fall back to displaying just the messag
 
 Can be run in the background if needed, just use ```pythonw.exe mqtt_notification.py```
 
+Works on Windows 10 with Python 2.7. Requires;
+- pywin32, http://sourceforge.net/projects/pywin32/ 
+- pahoo-mqtt, http://www.eclipse.org/paho/
+
 Example;
 ```mosquitto_pub -h mosquitto.org -t 'test/messages' -m '{"sub": "7NewsMelbourne", "txt": "RT @BrendanDonohoe7: Ambulance Vic hopes to move 100,000 patients to other care providers. Filter out non urgent cases."}'```
 
