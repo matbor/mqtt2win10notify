@@ -27,6 +27,8 @@ import time
 broker = "mosquitto.org"
 broker_port = 1883
 broker_topic = "test/messages"
+
+showmsgfor = 30  # display message for x seconds.
 # settings end
 
 # Class
@@ -58,8 +60,13 @@ class WindowsBalloonTip:
         Shell_NotifyIcon(NIM_ADD, nid)
         Shell_NotifyIcon(NIM_MODIFY, (hwnd, 0, NIF_INFO, win32con.WM_USER+20, hicon, 'Balloon Tooltip', msg, 7000, title,NIIF_INFO))
         
-        time.sleep(1)   
-
+        # crude way of doing this... to fix.
+        time.sleep(showmsgfor)   # display message
+        
+        # dismiss message
+        Shell_NotifyIcon(NIM_DELETE, nid)
+        PostQuitMessage(0)
+        
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, rc):
 	print("Connected with result code "+str(rc))
