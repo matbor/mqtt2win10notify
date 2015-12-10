@@ -1,6 +1,7 @@
 # mqtt2win10notify
 
-Quick example, proof of concept for displaying mqtt messages in the windows 10 notification center.
+Quick example, proof of concept for displaying mqtt messages in  windows.
+
 Based on example from; https://github.com/jithurjacob/Windows-10-Toast-Notifications
 and inspired by https://github.com/jpmens/mqttwarn/pull/160
 
