@@ -22,4 +22,4 @@ Example;
 
 ![center](https://raw.githubusercontent.com/matbor/mqtt2win10notify/master/assets/action%20center.png)
 
-Handy tip if you want to display the notification for longer than the default 5-secs ![howto](http://www.addictivetips.com/windows-tips/customize-how-long-notifications-are-shown-before-being-dismissed-in-windows-10/)
+Handy tip if you want to display the notification for longer than the default 5-secs [howto](http://www.addictivetips.com/windows-tips/customize-how-long-notifications-are-shown-before-being-dismissed-in-windows-10/)
